@@ -21,7 +21,6 @@ public class ExchangeRateClient {
         String apiKey = "f334ac38203a36d22057701f";
         String url = "https://v6.exchangerate-api.com/v6/"+apiKey+"/latest/"+baseCurrency;
 
-        HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .timeout(Duration.ofSeconds(10)) //Tiempo de espera para la solicitud
@@ -39,7 +38,7 @@ public class ExchangeRateClient {
             }
 
         } catch (IOException | InterruptedException e) {
-            System.out.println("Erro al obtener datos de la API: "+e.getMessage());
+            System.out.println("Error al obtener datos de la API: "+e.getMessage());
             return null;
         }
     }
