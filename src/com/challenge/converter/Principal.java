@@ -15,7 +15,6 @@ public class Principal {
         Scanner scanner = new Scanner(System.in);
 
         Menu menu = new Menu();
-        menu.mostrarMenu();
         String opcion;
 
         do{
