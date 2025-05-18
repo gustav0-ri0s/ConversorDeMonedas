@@ -61,13 +61,14 @@ java -cp bin com.challenge.converter.Principal
 ## 🧮 Ejemplo de Uso
 
 1. Se muestran las monedas disponibles y sus códigos.
+   
    ![image](https://github.com/user-attachments/assets/322d9bb3-23cd-4cc9-b811-95eca63f1663)
 
 2. Ingresas el código de la moneda origen, moneda destino y el monto a convertir.
 
 https://github.com/user-attachments/assets/f31a1f4e-c11e-40e5-8f22-bc8e744a3cfc
 
-4. El sistema realiza la conversión, muestra el resultado y lo guarda en un historial JSON:
+3. El sistema realiza la conversión, muestra el resultado y lo guarda en un historial JSON:
 ```plaintext
 [
   {
